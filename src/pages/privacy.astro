@@ -1,0 +1,50 @@
+---
+import Base from "../layouts/Base.astro";
+import Crumbs from "../components/Crumbs.astro";
+import { site } from "../data/site";
+
+const title = "Privacy Policy | MGC Building Ltd";
+const description =
+  "How MGC Building Ltd uses your name, phone, email and job details when you ask for a quote.";
+---
+
+<Base title={title} description={description}>
+  <section class="page-hero">
+    <div class="wrap prose">
+      <Crumbs items={[{ href: "/", label: "Home" }, { label: "Privacy" }]} />
+      <h1>Privacy</h1>
+      <p>
+        MGC Building Ltd, {site.address.street}, {site.address.locality}, {site.address.region} {site.address.postcode},
+        is the business you contact through this site.
+      </p>
+      <h2>What we collect</h2>
+      <p>
+        If you call, email, WhatsApp, or use the quote form, we receive what you send. That is usually your name,
+        phone number, email, the town or postcode, and a note about the job. Photos you attach are included.
+      </p>
+      <h2>Why we use it</h2>
+      <p>
+        We use those details to reply, book a visit, and send a quote. We do not sell them. We do not use them for a newsletter
+        unless you ask to be emailed about a job.
+      </p>
+      <h2>How long we keep it</h2>
+      <p>
+        We keep quote emails and messages for as long as we need them for the job, the quote, or our own records.
+        If you want your details deleted and there is no live job, email {site.email} and ask.
+      </p>
+      <h2>Who else sees it</h2>
+      <p>
+        The quote form opens your own email app. It does not send the message through a third-party form service.
+        If you email us, your email provider handles the delivery in the normal way.
+      </p>
+      <h2>The map</h2>
+      <p>
+        The contact page does not load Google Maps until you press “Show the map”. After that, Google receives the usual
+        data a map embed sends. You can also open the address in Google Maps with the link, which leaves this site.
+      </p>
+      <p>
+        Questions: <a href={`mailto:${site.email}`}>{site.email}</a> or <a href={`tel:${site.phoneTel}`}>{site.phoneDisplay}</a>.
+      </p>
+    </div>
+  </section>
+</Base>

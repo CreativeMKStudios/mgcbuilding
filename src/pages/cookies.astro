@@ -1,0 +1,26 @@
+---
+import Base from "../layouts/Base.astro";
+import Crumbs from "../components/Crumbs.astro";
+
+const title = "Cookies | MGC Building Ltd";
+const description = "This site does not set tracking cookies. A map on the contact page loads only if you ask for it.";
+---
+
+<Base title={title} description={description}>
+  <section class="page-hero">
+    <div class="wrap prose">
+      <Crumbs items={[{ href: "/", label: "Home" }, { label: "Cookies" }]} />
+      <h1>Cookies</h1>
+      <p>
+        This website does not use analytics, advertising, or a cookie banner that pretends to ask. We do not set tracking cookies.
+      </p>
+      <p>
+        If you press “Show the map” on the contact page, Google may set cookies as part of loading the map. That is their service,
+        and it only starts when you ask for the map.
+      </p>
+      <p>
+        Your browser may store this site in its own history and cache. That is the browser, not a cookie we drop.
+      </p>
+    </div>
+  </section>
+</Base>

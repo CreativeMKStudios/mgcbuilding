@@ -1,0 +1,20 @@
+---
+import Base from "../layouts/Base.astro";
+
+const title = "Page not found | MGC Building Ltd";
+const description = "That page is not on the MGC Building Ltd site. Go back to the home page or contact us.";
+---
+
+<Base title={title} description={description} noindex={true}>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">404</p>
+      <h1>That page is not here.</h1>
+      <p class="lede">The link may be old. The work, the reviews and the quote form are still on the site.</p>
+      <p>
+        <a class="btn btn-red" href="/">Back to the home page</a>
+        <a class="btn btn-line" href="/contact">Contact</a>
+      </p>
+    </div>
+  </section>
+</Base>

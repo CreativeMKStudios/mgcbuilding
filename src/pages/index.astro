@@ -1,0 +1,192 @@
+---
+import Base from "../layouts/Base.astro";
+import Photo from "../components/Photo.astro";
+import Stars from "../components/Stars.astro";
+import { faqs, site, steps } from "../data/site";
+import { services } from "../data/services";
+import { googleReviews } from "../data/reviews";
+
+const title = "MGC Building Ltd | Extensions and Home Building in Bedford";
+const description = site.description;
+const faqSchema = {
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+---
+
+<Base title={title} description={description} preload="/images/work/w72.webp" schema={[faqSchema]}>
+  <section class="hero">
+    <div class="wrap-l">
+      <div class="hero-card">
+        <Photo id="w72" eager sizes="100vw" />
+        <div class="hero-copy">
+          <a class="chip" href="/areas/shortstown">
+            <b>Since 2017</b>
+            Builders in Shortstown, Bedford
+          </a>
+          <h1>Extensions, lofts <span class="amp">&</span> home builds.</h1>
+          <p>
+            We are based at 52 Greycote, Shortstown. We build extensions, convert lofts, put up new homes,
+            and lay drives and gardens across Bedfordshire and four counties around it.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-red" href="/contact">Request a quote</a>
+            <a class="btn btn-ghost" href="/projects">See the work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Why people call us</p>
+      <h2>A local firm, with the photos to prove it.</h2>
+      <p class="lede">
+        Maciej Zielonka started MGC Building Ltd in {site.foundedLabel}. Google shows {site.googleRating} from {site.googleReviewCount} reviews.
+        The work covers {site.counties.length} counties. We do not invent bigger numbers than that.
+      </p>
+      <div class="bento">
+        <div class="stack">
+          <article class="card stat">
+            <div class="star" aria-hidden="true">★</div>
+            <strong>{site.founded}</strong>
+            <p>Started in Bedford. Still based in Shortstown.</p>
+          </article>
+          <article class="card stat">
+            <div class="star" aria-hidden="true">★</div>
+            <strong>{site.googleRating}</strong>
+            <p>Google rating from {site.googleReviewCount} reviews. One of them is 2 stars. <a href="/reviews">Read all five</a>.</p>
+          </article>
+        </div>
+        <article class="card feature">
+          <div class="stat">
+            <div class="star" aria-hidden="true">★</div>
+            <strong>5</strong>
+            <p>Counties: Bedfordshire, Buckinghamshire, Cambridgeshire, Northamptonshire and Hertfordshire.</p>
+            <a class="btn btn-line" href="/areas" style="margin-top:1rem">Areas we cover</a>
+          </div>
+          <Photo id="w03" sizes="(max-width: 980px) 100vw, 40vw" />
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">What we do</p>
+      <h2>The jobs we actually take.</h2>
+      <p class="lede">Ten lines of work, the same ones we have advertised for years. If you only need a tap changed, we are the wrong call.</p>
+      <div class="service-grid">
+        {services.map((service, index) => (
+          <a class="service-card" href={`/services/${service.slug}`}>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <h3>{service.name}</h3>
+            <p>{service.summary}</p>
+            <span class="more">More about this</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Before / after</p>
+        <h2>The same front drive, finished.</h2>
+        <p class="lede">Block paving in herringbone, with a charcoal kerb. The left photo is mid-job. The right photo is the finished drive. They were taken from different spots.</p>
+      </div>
+      <div class="ba" style="margin-top:1.4rem">
+        <figure>
+          <Photo id="w89" sizes="(max-width: 700px) 100vw, 50vw" />
+          <figcaption>Before</figcaption>
+        </figure>
+        <figure>
+          <Photo id="w88" sizes="(max-width: 700px) 100vw, 50vw" />
+          <figcaption>After</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">How a job starts</p>
+      <h2>Three steps. No mystery.</h2>
+      <div class="steps">
+        {steps.map((step) => (
+          <article class="plain-card">
+            <span class="kicker">{step.n}</span>
+            <h3>{step.title}</h3>
+            <p>{step.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Google reviews</p>
+          <h2>4.4 from 5 reviews.</h2>
+          <p class="lede">
+            These are the reviews on our Google listing, copied as they were written.
+            The 2-star review is about tool hire, not a building job. It stays on the page.
+          </p>
+          <p><a href={site.reviewsUrl}>See them on Google</a> or <a href="/reviews">read every review we have published here</a>.</p>
+        </div>
+        <div class="review-grid" style="grid-template-columns:1fr">
+          {googleReviews.slice(0, 3).map((review) => (
+            <article class="review-card">
+              {review.stars && <Stars value={review.stars} />}
+              <p class="quote">“{review.text}”</p>
+              <p class="who"><span>{review.name}</span><span>{review.date} · Google</span></p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2>What people ask before they book.</h2>
+        <div class="faq-photos">
+          <Photo id="w01" sizes="(max-width: 980px) 100vw, 35vw" />
+          <Photo id="w12" sizes="(max-width: 980px) 50vw, 18vw" />
+          <Photo id="w25" sizes="(max-width: 980px) 50vw, 18vw" />
+        </div>
+      </div>
+      <div>
+        {faqs.map((faq) => (
+          <details class="qa">
+            <summary>{faq.q}</summary>
+            <p>{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band">
+        <Photo id="w01" sizes="100vw" />
+        <div>
+          <h2>Tell us about the house.</h2>
+          <p class="lede">Free visit. Written quote. No fee if you decide not to go ahead.</p>
+          <a class="btn btn-red" href="/contact">Request a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

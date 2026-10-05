@@ -1,0 +1,54 @@
+---
+import { services as serviceList } from "../data/services";
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+const current = (href: string) => (path === href ? "page" : undefined);
+---
+
+<header class="site-header">
+  <div class="wrap-l header-row">
+    <a class="logo" href="/" aria-label="MGC Building Ltd, home">
+      <img src="/images/logo.png" alt="" width="878" height="337" />
+    </a>
+    <nav id="nav-panel" class="nav-panel" aria-label="Main">
+      <a href="/about" aria-current={current("/about")}>About</a>
+      <a href="/projects" aria-current={current("/projects")}>Work</a>
+      <details class="drop">
+        <summary>Services</summary>
+        <div class="drop-panel">
+          <a href="/services" aria-current={current("/services")}>All services</a>
+          {serviceList.map((service) => (
+            <a href={`/services/${service.slug}`} aria-current={current(`/services/${service.slug}`)}>
+              {service.nav}
+            </a>
+          ))}
+        </div>
+      </details>
+      <a href="/areas" aria-current={current("/areas")}>Areas</a>
+      <a href="/reviews" aria-current={current("/reviews")}>Reviews</a>
+      <a href="/contact" aria-current={current("/contact")}>Contact</a>
+    </nav>
+    <a class="btn btn-red header-cta" href="/contact">Request a quote</a>
+    <a class="btn btn-red header-cta-mobile" href="/contact">Quote</a>
+    <button class="btn btn-line burger" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel">
+      Menu
+    </button>
+  </div>
+</header>
+<script>
+  const btn = document.querySelector<HTMLButtonElement>("#menu-btn");
+  const panel = document.querySelector<HTMLElement>("#nav-panel");
+  btn?.addEventListener("click", () => {
+    const open = !panel?.classList.contains("is-open");
+    panel?.classList.toggle("is-open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    document.body.classList.toggle("nav-open", open);
+  });
+  panel?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      panel.classList.remove("is-open");
+      btn?.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("nav-open");
+    });
+  });
+</script>

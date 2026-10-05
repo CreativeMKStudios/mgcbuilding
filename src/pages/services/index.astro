@@ -1,0 +1,51 @@
+---
+import Base from "../../layouts/Base.astro";
+import Crumbs from "../../components/Crumbs.astro";
+import Photo from "../../components/Photo.astro";
+import { services } from "../../data/services";
+
+const title = "Building Services | MGC Building Ltd, Bedford";
+const description =
+  "Extensions, loft conversions, new builds, renovations, garage conversions, garden rooms, groundworks, driveways and landscaping. Based in Shortstown.";
+const schema = {
+  "@type": "ItemList",
+  name: "Building services from MGC Building Ltd",
+  itemListElement: services.map((service, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: service.name,
+    url: `https://www.mgcbuilding.com/services/${service.slug}`,
+  })),
+};
+---
+
+<Base title={title} description={description} schema={[schema]}>
+  <section class="page-hero">
+    <div class="wrap">
+      <Crumbs items={[{ href: "/", label: "Home" }, { label: "Services" }]} />
+      <p class="eyebrow">Services</p>
+      <h1>Work we price and build.</h1>
+      <p class="lede">
+        These are the services on our old site, and the work in our photos. Pick the one that matches the house.
+        If the job is a mix, say so. Most extensions drag a driveway or a kitchen along with them.
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap" style="display:grid; gap:1rem">
+      {services.map((service) => (
+        <article class="card split">
+          <div>
+            <p class="kicker">{service.nav}</p>
+            <h2 style="font-size:clamp(1.7rem, 3vw, 2.4rem)">{service.name}</h2>
+            <p class="lede">{service.lede}</p>
+            <a class="btn btn-red" href={`/services/${service.slug}`}>Read about {service.name.toLowerCase()}</a>
+          </div>
+          <div class="media-frame">
+            <Photo id={service.photo} sizes="(max-width: 980px) 100vw, 40vw" />
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>

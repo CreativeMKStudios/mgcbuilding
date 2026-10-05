@@ -1,0 +1,23 @@
+{
+  "name": "MGC Building Ltd",
+  "short_name": "MGC Building",
+  "description": "Extensions, lofts and home building from Shortstown, Bedford.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090d",
+  "theme_color": "#08090d",
+  "lang": "en-GB",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

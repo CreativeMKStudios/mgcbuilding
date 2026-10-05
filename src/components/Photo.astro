@@ -1,0 +1,30 @@
+---
+import photos from "../data/photos.json";
+
+interface Props {
+  id: string;
+  eager?: boolean;
+  sizes?: string;
+  class?: string;
+}
+
+const { id, eager = false, sizes = "(max-width: 700px) 100vw, 50vw", class: className } = Astro.props;
+const photo = photos.find((item) => item.id === id);
+if (!photo) {
+  throw new Error(`Missing photo ${id}`);
+}
+const srcset = photo.w > 800 ? `${photo.sm} 800w, ${photo.src} ${photo.w}w` : undefined;
+---
+
+<img
+  class={className}
+  src={eager ? photo.src : photo.sm}
+  srcset={srcset}
+  sizes={srcset ? sizes : undefined}
+  width={photo.w}
+  height={photo.h}
+  alt={photo.alt}
+  loading={eager ? "eager" : "lazy"}
+  decoding="async"
+  fetchpriority={eager ? "high" : undefined}
+/>
