@@ -1,0 +1,44 @@
+---
+import Base from "../../layouts/Base.astro";
+import Crumbs from "../../components/Crumbs.astro";
+import { areas, countiesInOrder } from "../../data/areas";
+import { site } from "../../data/site";
+
+const title = "Areas We Cover | MGC Building Ltd, Bedford";
+const description =
+  "MGC Building Ltd works from Shortstown across Bedfordshire, Buckinghamshire, Cambridgeshire, Northamptonshire and Hertfordshire.";
+---
+
+<Base title={title} description={description}>
+  <section class="page-hero">
+    <div class="wrap">
+      <Crumbs items={[{ href: "/", label: "Home" }, { label: "Areas" }]} />
+      <p class="eyebrow">Areas</p>
+      <h1>Where we will come.</h1>
+      <p class="lede">
+        The base is {site.address.street}, {site.address.locality}, {site.address.postcode}. From there we cover
+        {" "}{site.counties.join(", ")}. The pages below are the towns we are asked about most. If yours is missing and it sits in those counties, call anyway.
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap" style="display:grid; gap:2.2rem">
+      {countiesInOrder.map((county) => (
+        <div>
+          <h2>{county}</h2>
+          <div class="area-grid">
+            {areas
+              .filter((area) => area.county === county)
+              .map((area) => (
+                <a class="area-card" href={`/areas/${area.slug}`}>
+                  <span>{area.county}</span>
+                  <h3>{area.name}</h3>
+                  <p>{area.distance}</p>
+                </a>
+              ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,77 @@
+---
+import { site } from "../data/site";
+---
+
+<form class="form" id="quote" novalidate>
+  <div class="form-row">
+    <label>
+      Name
+      <input name="name" type="text" autocomplete="name" required />
+    </label>
+    <label>
+      Phone
+      <input name="phone" type="tel" autocomplete="tel" inputmode="tel" />
+    </label>
+  </div>
+  <label>
+    Email
+    <input name="email" type="email" autocomplete="email" />
+  </label>
+  <label>
+    Where is the job?
+    <input name="place" type="text" autocomplete="address-level2" placeholder="Town or postcode" />
+  </label>
+  <label>
+    What do you need done?
+    <textarea name="message" required placeholder="Extension, loft, drive, or tell us in your own words."></textarea>
+  </label>
+  <label class="hp">
+    Company
+    <input name="company" type="text" tabindex="-1" autocomplete="off" />
+  </label>
+  <p class="error" id="form-error" hidden></p>
+  <p class="note" id="form-status" role="status"></p>
+  <button class="btn btn-red" type="submit">Email this to MGC</button>
+  <p class="note">
+    This opens your email app with the message ready to send to {site.email}. If nothing opens, call
+    <a href={`tel:${site.phoneTel}`}>{site.phoneDisplay}</a>.
+  </p>
+</form>
+<script define:vars={{ email: site.email }}>
+  const form = document.querySelector("#quote");
+  const error = document.querySelector("#form-error");
+  const status = document.querySelector("#form-status");
+  form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!(form instanceof HTMLFormElement) || !(error instanceof HTMLElement) || !(status instanceof HTMLElement)) return;
+    const data = new FormData(form);
+    if (String(data.get("company") || "").trim()) return;
+    const name = String(data.get("name") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
+    const mail = String(data.get("email") || "").trim();
+    const place = String(data.get("place") || "").trim();
+    const message = String(data.get("message") || "").trim();
+    error.hidden = true;
+    if (!name || !message) {
+      error.hidden = false;
+      error.textContent = "Add your name and a short note about the job.";
+      return;
+    }
+    if (!phone && !mail) {
+      error.hidden = false;
+      error.textContent = "Add a phone number or an email so we can reply.";
+      return;
+    }
+    const body = [
+      `Name: ${name}`,
+      `Phone: ${phone || "-"}`,
+      `Email: ${mail || "-"}`,
+      `Place: ${place || "-"}`,
+      "",
+      message,
+    ].join("\n");
+    const href = `mailto:${email}?subject=${encodeURIComponent("Quote request from the website")}&body=${encodeURIComponent(body)}`;
+    status.textContent = "Your email app should open with this message. If it does not, call 07908 160142.";
+    window.location.href = href;
+  });
+</script>

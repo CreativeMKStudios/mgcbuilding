@@ -1,0 +1,92 @@
+---
+import Base from "../layouts/Base.astro";
+import Crumbs from "../components/Crumbs.astro";
+import QuoteForm from "../components/QuoteForm.astro";
+import { site } from "../data/site";
+
+const title = "Contact MGC Building Ltd | Quote from Shortstown";
+const description =
+  "Call MGC Building Ltd on 07908 160142, email info@mgcbuilding.com, or request a quote. 52 Greycote, Shortstown, Bedford, MK42 0TU.";
+const schema = {
+  "@type": "ContactPage",
+  name: "Contact MGC Building Ltd",
+  url: `${site.url}/contact`,
+  mainEntity: { "@id": `${site.url}/#business` },
+};
+---
+
+<Base title={title} description={description} schema={[schema]}>
+  <section class="page-hero">
+    <div class="wrap">
+      <Crumbs items={[{ href: "/", label: "Home" }, { label: "Contact" }]} />
+      <p class="eyebrow">Contact</p>
+      <h1>Ask for a quote.</h1>
+      <p class="lede">
+        The fastest way is the phone. Monday to Saturday, 7:30am to 6:30pm. Sunday we are closed.
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <ul class="contact-list">
+          <li>
+            Phone
+            <br />
+            <a href={`tel:${site.phoneTel}`}>{site.phoneDisplay}</a>
+          </li>
+          <li>
+            WhatsApp
+            <br />
+            <a href={`https://wa.me/447908160142`} target="_blank" rel="noopener noreferrer">Message {site.phoneDisplay}</a>
+          </li>
+          <li>
+            Email
+            <br />
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+          </li>
+          <li>
+            Address
+            <br />
+            <a href={site.mapsUrl} target="_blank" rel="noopener noreferrer">
+              {site.address.street}, {site.address.locality}, {site.address.region}, {site.address.postcode}
+            </a>
+          </li>
+          <li>
+            Tool hire
+            <br />
+            <a href={site.hireUrl} target="_blank" rel="noopener noreferrer">mgc-hire.co.uk</a>
+          </li>
+        </ul>
+        <div class="hours" style="margin-top:1.2rem">
+          {site.hours.map((row) => (
+            <div>
+              <span>{row.days}</span>
+              <span>{row.hours}</span>
+            </div>
+          ))}
+        </div>
+        <div id="map-slot" style="margin-top:1.2rem">
+          <button class="btn btn-line map-btn" id="map-btn" type="button">Show the map</button>
+        </div>
+      </div>
+      <div class="card" id="quote-card">
+        <h2 style="font-size:1.8rem">Send the job details</h2>
+        <QuoteForm />
+      </div>
+    </div>
+  </section>
+</Base>
+<script define:vars={{ embed: site.mapsEmbed }}>
+  const button = document.querySelector("#map-btn");
+  const slot = document.querySelector("#map-slot");
+  button?.addEventListener("click", () => {
+    const frame = document.createElement("iframe");
+    frame.className = "map-frame";
+    frame.title = "Map showing MGC Building Ltd in Shortstown";
+    frame.loading = "lazy";
+    frame.referrerPolicy = "no-referrer-when-downgrade";
+    frame.src = embed;
+    slot?.replaceChildren(frame);
+  });
+</script>

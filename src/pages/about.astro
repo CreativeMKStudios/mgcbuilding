@@ -1,0 +1,76 @@
+---
+import Base from "../layouts/Base.astro";
+import Crumbs from "../components/Crumbs.astro";
+import Photo from "../components/Photo.astro";
+import { site } from "../data/site";
+
+const title = "About MGC Building Ltd | Builders in Shortstown, Bedford";
+const description =
+  "MGC Building Ltd is run by Maciej Zielonka from 52 Greycote, Shortstown. Building across Bedfordshire and four nearby counties since 2017.";
+---
+
+<Base title={title} description={description}>
+  <section class="page-hero">
+    <div class="wrap">
+      <Crumbs items={[{ href: "/", label: "Home" }, { label: "About" }]} />
+      <p class="eyebrow">About us</p>
+      <h1>Builders in Shortstown since 2017.</h1>
+      <p class="lede">
+        MGC Building Ltd works from {site.address.street}, {site.address.locality}, {site.address.region} {site.address.postcode}.
+        {site.director} has run the firm from here since {site.foundedLabel}. Customers call him Maciej, or Maciek.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="media-frame">
+        <Photo id="w03" sizes="(max-width: 980px) 100vw, 50vw" />
+      </div>
+      <div class="prose">
+        <h2>What we do all day</h2>
+        <p>
+          We design the practical side of a job, then build it. Extensions, loft conversions, new homes, renovations,
+          garage conversions, garden rooms, groundworks, driveways and landscaping.
+        </p>
+        <p>
+          People also hire tools from us. Rollers and other kit go out to customers who are doing the work themselves.
+          If that is all you need, say so when you call {site.phoneDisplay}.
+        </p>
+        <p>
+          We cover {site.counties.join(", ")}. The base does not move. If the job is a long way out and it is small,
+          we will tell you a nearer builder is a better idea.
+        </p>
+        <h2>How we talk about the rules</h2>
+        <p>
+          Most extensions, lofts and jobs that take a wall out need building regulations approval. Some streets also need
+          planning permission. We explain which one your job is likely to need. The council decides. We build to the approved design.
+        </p>
+        <p>
+          Emil Zaman wrote on Google that we explain building regulations so you know what is going on. That is the standard we aim for on the visit.
+        </p>
+        <a class="btn btn-red" href="/contact">Request a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap card-grid">
+      <article class="plain-card">
+        <span class="kicker">Address</span>
+        <h3>{site.address.street}</h3>
+        <p>{site.address.locality}, {site.address.region}, {site.address.postcode}</p>
+      </article>
+      <article class="plain-card">
+        <span class="kicker">Hours</span>
+        <h3>Monday to Saturday</h3>
+        <p>7:30am to 6:30pm. Closed Sunday.</p>
+      </article>
+      <article class="plain-card">
+        <span class="kicker">Phone and email</span>
+        <h3><a href={`tel:${site.phoneTel}`}>{site.phoneDisplay}</a></h3>
+        <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      </article>
+    </div>
+  </section>
+</Base>

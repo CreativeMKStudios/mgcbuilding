@@ -1,0 +1,74 @@
+---
+import Base from "../../layouts/Base.astro";
+import Crumbs from "../../components/Crumbs.astro";
+import { areas } from "../../data/areas";
+import { services } from "../../data/services";
+import { site } from "../../data/site";
+
+export function getStaticPaths() {
+  return areas.map((area) => ({
+    params: { slug: area.slug },
+    props: { area },
+  }));
+}
+
+const { area } = Astro.props;
+const schema = {
+  "@type": "Service",
+  name: `Building work in ${area.name}`,
+  serviceType: "House building and extensions",
+  areaServed: {
+    "@type": "City",
+    name: area.name,
+    containedInPlace: { "@type": "AdministrativeArea", name: area.county },
+  },
+  provider: { "@id": `${site.url}/#business` },
+  url: `${site.url}/areas/${area.slug}`,
+  description: area.description,
+};
+---
+
+<Base title={`${area.title} | MGC Building Ltd`} description={area.description} schema={[schema]}>
+  <section class="page-hero">
+    <div class="wrap">
+      <Crumbs
+        items={[
+          { href: "/", label: "Home" },
+          { href: "/areas", label: "Areas" },
+          { label: area.name },
+        ]}
+      />
+      <p class="eyebrow">{area.county}</p>
+      <h1>{area.title}</h1>
+      <p class="lede">{area.distance}</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap prose">
+      <h2>The houses</h2>
+      <p>{area.housing}</p>
+      <h2>The work we take here</h2>
+      <p>{area.jobs}</p>
+      <p>{area.note}</p>
+      <p>
+        MGC Building Ltd is based at {site.address.street}, {site.address.locality}, {site.address.region} {site.address.postcode}.
+        Phone <a href={`tel:${site.phoneTel}`}>{site.phoneDisplay}</a>. The visit and the quote are free.
+      </p>
+      <a class="btn btn-red" href="/contact">Request a quote in {area.name}</a>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <h2>Services</h2>
+      <div class="service-grid">
+        {services.slice(0, 6).map((service) => (
+<a class="service-card" href={`/services/${service.slug}`}>
+              <span>{service.nav}</span>
+              <h3>{service.name}</h3>
+              <p>{service.summary}</p>
+            </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

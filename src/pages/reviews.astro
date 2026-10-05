@@ -1,0 +1,63 @@
+---
+import Base from "../layouts/Base.astro";
+import Crumbs from "../components/Crumbs.astro";
+import Stars from "../components/Stars.astro";
+import { googleReviews, otherReviews } from "../data/reviews";
+import { site } from "../data/site";
+
+const title = "Reviews | MGC Building Ltd, Bedford";
+const description =
+  "Google rating 4.4 from 5 reviews for MGC Building Ltd in Shortstown, plus further reviews from Bark and Yell. Read them in full.";
+---
+
+<Base title={title} description={description}>
+  <section class="page-hero">
+    <div class="wrap">
+      <Crumbs items={[{ href: "/", label: "Home" }, { label: "Reviews" }]} />
+      <p class="eyebrow">Reviews</p>
+      <h1>What customers wrote.</h1>
+      <p class="lede">
+        Google shows {site.googleRating} from {site.googleReviewCount} reviews. The words below are copied from those reviews,
+        then from Bark and Yell. We have not rewritten them, and we have not dropped the 2-star one.
+      </p>
+      <p>
+        <a class="btn btn-red" href={site.reviewsUrl}>Open the Google reviews</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>On Google</h2>
+      <div class="review-grid">
+        {googleReviews.map((review) => (
+          <article class="review-card">
+            {review.stars && <Stars value={review.stars} />}
+            {review.job && <p class="kicker">{review.job}</p>}
+            <p class="quote">“{review.text}”</p>
+            {review.reply && (
+              <p class="reply"><strong>Reply from MGC Building Ltd. </strong>{review.reply}</p>
+            )}
+            <p class="who"><span>{review.name}</span><span>{review.date}</span></p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <h2>On Bark and Yell</h2>
+      <p class="lede">These are separate from the Google score. Each card says where it was left.</p>
+      <div class="review-grid">
+        {otherReviews.map((review) => (
+          <article class="review-card">
+            {review.job && <p class="kicker">{review.job}</p>}
+            <p class="quote">“{review.text}”</p>
+            <p class="who"><span>{review.name}</span><span>{review.date} · {review.source}</span></p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

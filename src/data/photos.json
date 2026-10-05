@@ -1,0 +1,812 @@
+[
+  {
+    "id": "w00",
+    "src": "/images/work/w00.webp",
+    "sm": "/images/work/w00-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Open bifold doors from a room that is still being finished, looking out to the garden.",
+    "cat": "interior"
+  },
+  {
+    "id": "w01",
+    "src": "/images/work/w01.webp",
+    "sm": "/images/work/w01-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Living room with a marble floor, built-in shelves and a fireplace, near the end of the fit-out.",
+    "cat": "interior"
+  },
+  {
+    "id": "w02",
+    "src": "/images/work/w02.webp",
+    "sm": "/images/work/w02-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Close view of a window opening and the brickwork around it during a renovation.",
+    "cat": "interior"
+  },
+  {
+    "id": "w03",
+    "src": "/images/work/w03.webp",
+    "sm": "/images/work/w03-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "A worker in a high-vis jacket plastering a new media wall.",
+    "cat": "interior"
+  },
+  {
+    "id": "w04",
+    "src": "/images/work/w04.webp",
+    "sm": "/images/work/w04-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Dark kitchen with an island, photographed while the floor was still being finished.",
+    "cat": "interior"
+  },
+  {
+    "id": "w05",
+    "src": "/images/work/w05.webp",
+    "sm": "/images/work/w05-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Brick opening held up with acrow props while a wall is removed.",
+    "cat": "extension"
+  },
+  {
+    "id": "w06",
+    "src": "/images/work/w06.webp",
+    "sm": "/images/work/w06-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Stripped room with insulation showing in the ceiling before plasterboard.",
+    "cat": "interior"
+  },
+  {
+    "id": "w07",
+    "src": "/images/work/w07.webp",
+    "sm": "/images/work/w07-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "New roof joists over a blockwork extension, photographed at dusk.",
+    "cat": "extension"
+  },
+  {
+    "id": "w08",
+    "src": "/images/work/w08.webp",
+    "sm": "/images/work/w08-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Kitchen units being set out, with a laser level on the cabinets.",
+    "cat": "interior"
+  },
+  {
+    "id": "w09",
+    "src": "/images/work/w09.webp",
+    "sm": "/images/work/w09-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Large-format marble floor laid in a room that is nearly finished.",
+    "cat": "interior"
+  },
+  {
+    "id": "w10",
+    "src": "/images/work/w10.webp",
+    "sm": "/images/work/w10-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Garage opening with a temporary cover over the new roof structure.",
+    "cat": "extension"
+  },
+  {
+    "id": "w11",
+    "src": "/images/work/w11.webp",
+    "sm": "/images/work/w11-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Block walls and new ceiling joists inside an extension.",
+    "cat": "extension"
+  },
+  {
+    "id": "w12",
+    "src": "/images/work/w12.webp",
+    "sm": "/images/work/w12-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Loft room with a roof window and plastered walls.",
+    "cat": "loft"
+  },
+  {
+    "id": "w13",
+    "src": "/images/work/w13.webp",
+    "sm": "/images/work/w13-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Timber roof carcass built off the back of a brick house.",
+    "cat": "extension"
+  },
+  {
+    "id": "w14",
+    "src": "/images/work/w14.webp",
+    "sm": "/images/work/w14-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Open loft with rafters exposed and light coming through the roof.",
+    "cat": "loft"
+  },
+  {
+    "id": "w15",
+    "src": "/images/work/w15.webp",
+    "sm": "/images/work/w15-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Underfloor heating pipes fixed to insulation before the screed goes down.",
+    "cat": "extension"
+  },
+  {
+    "id": "w16",
+    "src": "/images/work/w16.webp",
+    "sm": "/images/work/w16-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Scaffold and new brickwork on the side of a house.",
+    "cat": "extension"
+  },
+  {
+    "id": "w17",
+    "src": "/images/work/w17.webp",
+    "sm": "/images/work/w17-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Roofing membrane and timber battens on a new roof.",
+    "cat": "extension"
+  },
+  {
+    "id": "w18",
+    "src": "/images/work/w18.webp",
+    "sm": "/images/work/w18-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Roof structure opened up for a large skylight.",
+    "cat": "loft"
+  },
+  {
+    "id": "w19",
+    "src": "/images/work/w19.webp",
+    "sm": "/images/work/w19-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Timber roof frame for a single-storey addition.",
+    "cat": "extension"
+  },
+  {
+    "id": "w20",
+    "src": "/images/work/w20.webp",
+    "sm": "/images/work/w20-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Large empty room with new glazing and a screeded floor.",
+    "cat": "interior"
+  },
+  {
+    "id": "w21",
+    "src": "/images/work/w21.webp",
+    "sm": "/images/work/w21-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "A wall knocked through between rooms, with rubble still on the floor.",
+    "cat": "interior"
+  },
+  {
+    "id": "w22",
+    "src": "/images/work/w22.webp",
+    "sm": "/images/work/w22-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "New brick pier and upper wall on an extension, shot from below.",
+    "cat": "extension"
+  },
+  {
+    "id": "w23",
+    "src": "/images/work/w23.webp",
+    "sm": "/images/work/w23-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Rear of a brick house with scaffold and a new opening formed.",
+    "cat": "extension"
+  },
+  {
+    "id": "w24",
+    "src": "/images/work/w24.webp",
+    "sm": "/images/work/w24-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Steel stud partition and a new doorway during a strip-out.",
+    "cat": "interior"
+  },
+  {
+    "id": "w25",
+    "src": "/images/work/w25.webp",
+    "sm": "/images/work/w25-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Kitchen with an island, part way through the fit-out.",
+    "cat": "interior"
+  },
+  {
+    "id": "w26",
+    "src": "/images/work/w26.webp",
+    "sm": "/images/work/w26-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Narrow side extension with blockwork and brick.",
+    "cat": "extension"
+  },
+  {
+    "id": "w27",
+    "src": "/images/work/w27.webp",
+    "sm": "/images/work/w27-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Plasterboard and a new window in a room being rebuilt.",
+    "cat": "interior"
+  },
+  {
+    "id": "w28",
+    "src": "/images/work/w28.webp",
+    "sm": "/images/work/w28-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Flat roof joists over a single-storey addition.",
+    "cat": "extension"
+  },
+  {
+    "id": "w29",
+    "src": "/images/work/w29.webp",
+    "sm": "/images/work/w29-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Side of a garage with a new window opening and a ladder.",
+    "cat": "extension"
+  },
+  {
+    "id": "w30",
+    "src": "/images/work/w30.webp",
+    "sm": "/images/work/w30-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Large open shell with columns, before internal walls go in.",
+    "cat": "interior"
+  },
+  {
+    "id": "w31",
+    "src": "/images/work/w31.webp",
+    "sm": "/images/work/w31-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Metal stud walls in a house that has been stripped back.",
+    "cat": "interior"
+  },
+  {
+    "id": "w32",
+    "src": "/images/work/w32.webp",
+    "sm": "/images/work/w32-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Tiled roof with a roof window fitted.",
+    "cat": "loft"
+  },
+  {
+    "id": "w33",
+    "src": "/images/work/w33.webp",
+    "sm": "/images/work/w33-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Mini digger beside new block piers on an extension base.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w34",
+    "src": "/images/work/w34.webp",
+    "sm": "/images/work/w34-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Close view of roof timbers, membrane and a lead detail.",
+    "cat": "extension"
+  },
+  {
+    "id": "w35",
+    "src": "/images/work/w35.webp",
+    "sm": "/images/work/w35-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Rear of a house with new openings and temporary props.",
+    "cat": "extension"
+  },
+  {
+    "id": "w36",
+    "src": "/images/work/w36.webp",
+    "sm": "/images/work/w36-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Long room with a steel beam and new windows along one side.",
+    "cat": "interior"
+  },
+  {
+    "id": "w37",
+    "src": "/images/work/w37.webp",
+    "sm": "/images/work/w37-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Timber and building materials stacked in a rear garden.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w38",
+    "src": "/images/work/w38.webp",
+    "sm": "/images/work/w38-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Lead flashing where a flat roof meets the existing wall.",
+    "cat": "extension"
+  },
+  {
+    "id": "w39",
+    "src": "/images/work/w39.webp",
+    "sm": "/images/work/w39-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Looking down on scaffold and a rear addition.",
+    "cat": "extension"
+  },
+  {
+    "id": "w40",
+    "src": "/images/work/w40.webp",
+    "sm": "/images/work/w40-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Fresh concrete base in a back garden, with a laser level in shot.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w41",
+    "src": "/images/work/w41.webp",
+    "sm": "/images/work/w41-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Two-storey rear addition in blockwork, tied into the existing house.",
+    "cat": "extension"
+  },
+  {
+    "id": "w42",
+    "src": "/images/work/w42.webp",
+    "sm": "/images/work/w42-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Brick skin going on a rear extension.",
+    "cat": "extension"
+  },
+  {
+    "id": "w43",
+    "src": "/images/work/w43.webp",
+    "sm": "/images/work/w43-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Concrete roof tiles laid on a single-storey addition.",
+    "cat": "extension"
+  },
+  {
+    "id": "w44",
+    "src": "/images/work/w44.webp",
+    "sm": "/images/work/w44-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Rear opening propped with acrows, and a new concrete base outside.",
+    "cat": "extension"
+  },
+  {
+    "id": "w45",
+    "src": "/images/work/w45.webp",
+    "sm": "/images/work/w45-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Mini digger working inside the shell of a new extension.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w46",
+    "src": "/images/work/w46.webp",
+    "sm": "/images/work/w46-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Timber roof on a blockwork extension or garage.",
+    "cat": "extension"
+  },
+  {
+    "id": "w47",
+    "src": "/images/work/w47.webp",
+    "sm": "/images/work/w47-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Two-storey brick house with a new side addition started in the garden.",
+    "cat": "extension"
+  },
+  {
+    "id": "w48",
+    "src": "/images/work/w48.webp",
+    "sm": "/images/work/w48-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Rear scaffold and the line of a new roof.",
+    "cat": "extension"
+  },
+  {
+    "id": "w49",
+    "src": "/images/work/w49.webp",
+    "sm": "/images/work/w49-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Digger breaking out the ground beside a house.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w50",
+    "src": "/images/work/w50.webp",
+    "sm": "/images/work/w50-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Timber goalpost frame ready for a wide opening.",
+    "cat": "extension"
+  },
+  {
+    "id": "w51",
+    "src": "/images/work/w51.webp",
+    "sm": "/images/work/w51-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Rear scaffold on a house, photographed from above.",
+    "cat": "extension"
+  },
+  {
+    "id": "w52",
+    "src": "/images/work/w52.webp",
+    "sm": "/images/work/w52-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Digger working in the space beside a garage.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w53",
+    "src": "/images/work/w53.webp",
+    "sm": "/images/work/w53-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Rear of a house with a digger and a new opening in the wall.",
+    "cat": "extension"
+  },
+  {
+    "id": "w54",
+    "src": "/images/work/w54.webp",
+    "sm": "/images/work/w54-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Trench dug along a garden fence for foundations.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w55",
+    "src": "/images/work/w55.webp",
+    "sm": "/images/work/w55-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Steel frame and blockwork for a rear extension.",
+    "cat": "extension"
+  },
+  {
+    "id": "w56",
+    "src": "/images/work/w56.webp",
+    "sm": "/images/work/w56-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Rear wall opened up, with the old lean-to gone.",
+    "cat": "extension"
+  },
+  {
+    "id": "w57",
+    "src": "/images/work/w57.webp",
+    "sm": "/images/work/w57-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Single-storey shell with a new external door.",
+    "cat": "extension"
+  },
+  {
+    "id": "w58",
+    "src": "/images/work/w58.webp",
+    "sm": "/images/work/w58-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Back garden reduced to soil before a new base.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w59",
+    "src": "/images/work/w59.webp",
+    "sm": "/images/work/w59-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Garden with a mature tree and the ground opened up.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w60",
+    "src": "/images/work/w60.webp",
+    "sm": "/images/work/w60-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Trench foundations with timber shuttering and wet concrete.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w61",
+    "src": "/images/work/w61.webp",
+    "sm": "/images/work/w61-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "New roof structure over a rear room, seen from inside.",
+    "cat": "extension"
+  },
+  {
+    "id": "w62",
+    "src": "/images/work/w62.webp",
+    "sm": "/images/work/w62-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Concrete edge and drainage at the side of a new base.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w63",
+    "src": "/images/work/w63.webp",
+    "sm": "/images/work/w63-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "View from a scaffold across a lawn and hedge.",
+    "cat": "extension"
+  },
+  {
+    "id": "w64",
+    "src": "/images/work/w64.webp",
+    "sm": "/images/work/w64-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Rear doors on a brick house, with scaffold above them.",
+    "cat": "extension"
+  },
+  {
+    "id": "w65",
+    "src": "/images/work/w65.webp",
+    "sm": "/images/work/w65-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Hardcore laid inside a new extension.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w66",
+    "src": "/images/work/w66.webp",
+    "sm": "/images/work/w66-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Mini digger lifting a tree stump out of a garden.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w67",
+    "src": "/images/work/w67.webp",
+    "sm": "/images/work/w67-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Strip foundations marked out in a back garden.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w68",
+    "src": "/images/work/w68.webp",
+    "sm": "/images/work/w68-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Exposed roots and a trench beside a house.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w69",
+    "src": "/images/work/w69.webp",
+    "sm": "/images/work/w69-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Digger in a rear garden, tight to the back of the house.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w70",
+    "src": "/images/work/w70.webp",
+    "sm": "/images/work/w70-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Excavation beside a lawn, with the spoil piled up.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w71",
+    "src": "/images/work/w71.webp",
+    "sm": "/images/work/w71-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Trench along a side passage between houses.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w72",
+    "src": "/images/work/w72.webp",
+    "sm": "/images/work/w72-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Finished single-storey brick extension with black bifold doors.",
+    "cat": "extension"
+  },
+  {
+    "id": "w73",
+    "src": "/images/work/w73.webp",
+    "sm": "/images/work/w73-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Close detail of brick and block at the corner of a new wall.",
+    "cat": "extension"
+  },
+  {
+    "id": "w74",
+    "src": "/images/work/w74.webp",
+    "sm": "/images/work/w74-sm.webp",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Blockwork foundation for a garden building.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w75",
+    "src": "/images/work/w75.webp",
+    "sm": "/images/work/w75-sm.webp",
+    "w": 1000,
+    "h": 750,
+    "alt": "Timber shell of a garden room or large shed.",
+    "cat": "garden"
+  },
+  {
+    "id": "w76",
+    "src": "/images/work/w76.webp",
+    "sm": "/images/work/w76-sm.webp",
+    "w": 1000,
+    "h": 750,
+    "alt": "Curved timber frame for a garden structure.",
+    "cat": "garden"
+  },
+  {
+    "id": "w77",
+    "src": "/images/work/w77.webp",
+    "sm": "/images/work/w77-sm.webp",
+    "w": 1000,
+    "h": 750,
+    "alt": "Concrete slab with steel mesh, ready to finish.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w78",
+    "src": "/images/work/w78.webp",
+    "sm": "/images/work/w78-sm.webp",
+    "w": 1000,
+    "h": 750,
+    "alt": "Sand blinding inside a new foundation.",
+    "cat": "groundworks"
+  },
+  {
+    "id": "w79",
+    "src": "/images/work/w79.webp",
+    "sm": "/images/work/w79-sm.webp",
+    "w": 1000,
+    "h": 750,
+    "alt": "Finished block-paved drive beside a brick house.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w80",
+    "src": "/images/work/w80.webp",
+    "sm": "/images/work/w80-sm.webp",
+    "w": 750,
+    "h": 1000,
+    "alt": "Paving slabs stacked in a side alley before laying.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w81",
+    "src": "/images/work/w81.webp",
+    "sm": "/images/work/w81-sm.webp",
+    "w": 750,
+    "h": 1000,
+    "alt": "Slab path being laid along the side of a house.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w82",
+    "src": "/images/work/w82.webp",
+    "sm": "/images/work/w82-sm.webp",
+    "w": 750,
+    "h": 1000,
+    "alt": "Cut slabs and a saw on a paving job.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w83",
+    "src": "/images/work/w83.webp",
+    "sm": "/images/work/w83-sm.webp",
+    "w": 750,
+    "h": 1000,
+    "alt": "Narrow side passage with scaffold and paving work.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w84",
+    "src": "/images/work/w84.webp",
+    "sm": "/images/work/w84-sm.webp",
+    "w": 1000,
+    "h": 750,
+    "alt": "Block paving part-laid on a front drive, with kerbs set out in a curve.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w85",
+    "src": "/images/work/w85.webp",
+    "sm": "/images/work/w85-sm.webp",
+    "w": 1000,
+    "h": 750,
+    "alt": "Finished herringbone block driveway with a charcoal kerb.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w86",
+    "src": "/images/work/w86.webp",
+    "sm": "/images/work/w86-sm.webp",
+    "w": 1000,
+    "h": 750,
+    "alt": "Natural stone path through a garden.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w87",
+    "src": "/images/work/w87.webp",
+    "sm": "/images/work/w87-sm.webp",
+    "w": 750,
+    "h": 1000,
+    "alt": "Stone path leading to a side gate.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w88",
+    "src": "/images/work/w88.webp",
+    "sm": "/images/work/w88-sm.webp",
+    "w": 1000,
+    "h": 750,
+    "alt": "Finished block-paved front drive on a brick house, seen from the road.",
+    "cat": "driveway"
+  },
+  {
+    "id": "w89",
+    "src": "/images/work/w89.webp",
+    "sm": "/images/work/w89-sm.webp",
+    "w": 1440,
+    "h": 1440,
+    "alt": "The same front drive mid-job, with sand down and blocks stacked ready to lay.",
+    "cat": "driveway"
+  }
+]

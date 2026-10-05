@@ -1,0 +1,78 @@
+---
+import Base from "../../layouts/Base.astro";
+import Crumbs from "../../components/Crumbs.astro";
+import Photo from "../../components/Photo.astro";
+import { services } from "../../data/services";
+import { site } from "../../data/site";
+
+export function getStaticPaths() {
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const schema = {
+  "@type": "Service",
+  name: service.name,
+  serviceType: service.name,
+  description: service.description,
+  url: `${site.url}/services/${service.slug}`,
+  provider: { "@id": `${site.url}/#business` },
+  areaServed: site.counties.map((name) => ({ "@type": "AdministrativeArea", name })),
+};
+---
+
+<Base title={`${service.title} | MGC Building Ltd`} description={service.description} schema={[schema]}>
+  <section class="page-hero">
+    <div class="wrap">
+      <Crumbs
+        items={[
+          { href: "/", label: "Home" },
+          { href: "/services", label: "Services" },
+          { label: service.name },
+        ]}
+      />
+      <p class="eyebrow">{service.nav}</p>
+      <h1>{service.title}</h1>
+      <p class="lede">{service.lede}</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap split">
+      <div class="media-frame">
+        <Photo id={service.photo} sizes="(max-width: 980px) 100vw, 48vw" />
+      </div>
+      <div class="prose">
+        {service.body.map((paragraph) => <p>{paragraph}</p>)}
+        <h2>What this usually includes</h2>
+        <ul class="checks">
+          {service.includes.map((item) => <li>{item}</li>)}
+        </ul>
+        <p>
+          The visit and the written quote are free. Call <a href={`tel:${site.phoneTel}`}>{site.phoneDisplay}</a> or
+          <a href="/contact">send the details</a>.
+        </p>
+        <a class="btn btn-red" href="/contact">Request a quote</a>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <h2>Other work</h2>
+      <div class="service-grid">
+        {services
+          .filter((item) => item.slug !== service.slug)
+          .slice(0, 3)
+          .map((item) => (
+            <a class="service-card" href={`/services/${item.slug}`}>
+              <span>{item.nav}</span>
+              <h3>{item.name}</h3>
+              <p>{item.lede}</p>
+            </a>
+          ))}
+      </div>
+    </div>
+  </section>
+</Base>

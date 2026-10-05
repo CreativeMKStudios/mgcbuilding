@@ -1,0 +1,17 @@
+{
+  "name": "mgc-building",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview --host"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "@fontsource-variable/outfit": "^5.2.8",
+    "@fontsource/fraunces": "^5.2.9",
+    "astro": "^5.14.4"
+  }
+}
